@@ -8,7 +8,7 @@ do {
         $f = $i.ToString("D2");
         $novoNome = Join-Path -Path $pasta -ChildPath "$f - $p.Name"
         Rename-Item -Path $p.FullName -NewName $novoNome
-        Write-Host "$p.FullName => $novoNome"
+        Write-Host "$p => $novoNome"
     }
 
     $resposta = Read-Host "Efetuar nova renomeacao? (S/N)"

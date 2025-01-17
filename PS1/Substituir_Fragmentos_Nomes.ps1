@@ -6,7 +6,7 @@ do {
     foreach ($arquivo in $arquivos) {
         $novoNome = $arquivo.FullName.Replace($substituir, "")
         Rename-Item -Path $arquivo.FullName -NewName $novoNome
-        Write-Host "$arquivo.FullName => $novoNome"
+        Write-Host "$arquivo => $novoNome"
     }
 
     $resposta = Read-Host "Efetuar nova substituição? (S/N)"
